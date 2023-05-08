@@ -4,7 +4,7 @@ import sixtusNwaoguResume from "../Assets/Sixtus_Nwaogu_CV.pdf";
 import { IconListDashes,IconCopyright,IconX,IconGithubLogo,IconTwitterLogo,IconLinkedinLogo,IconInstagramLogo } from '@vtex/phosphor-icons'
 
 const Header = () => {
-    const sixtus = "<Sixtus/>"
+    const sixtus = "Sixtus"
     const size = 32;
     const [open,setOpen] = useState("")
     const [close,setClose] = useState("")

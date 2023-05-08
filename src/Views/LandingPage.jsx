@@ -113,8 +113,10 @@ const sixtusAge = new Date().getFullYear() - 2003
                     <div className="inner-Project-Container">
                       <img className='img' src={project.prImg} alt={project.prName} />
                       <span className="project-Name">
-                        <p>{project.prName}</p>
-                        <a href={project.prSiteLink} target="_blank" rel='noreferrer'><IconArrowSquareOut className='redirect'/></a>
+                        <a href={project.prSiteLink} target='_blank' rel='noreferrer'>
+                          <p>{project.prName}&nbsp;</p>
+                          <a href={project.prSiteLink} target="_blank" rel='noreferrer'><IconArrowSquareOut className='redirect'/></a>
+                        </a>
                       </span>
                       <div className="description">
                         <small>Description :</small>
