@@ -3,6 +3,7 @@ import "../Styles/LandingPage.scss";
 import { useSkills } from '../Hooks/SkillsContextProvider';
 import Skills from '../Components/Skills';
 import { IconArrowSquareOut, IconGithubLogo } from '@vtex/phosphor-icons';
+
 const LandingPage = () => {
 const { codeSnippets, Projects} =  useSkills();
  
@@ -14,6 +15,13 @@ const Education = [
     location :"Abeokuta, Nigeria.",
     comment : "The experience gathered at Aptech was what laid the foundation of my software development career. I learnt a vast majority of programming languages in the duration of my course, which gave me insights on how to structure my learning focus."
   },
+  {
+    major: "Secondary School Education",
+    date: "September 2013 - September 2019",
+    institute: "Saint Augustine's Seminary",
+    location: "Ebonyi, Nigeria.",
+    comment: "My secondary school experience helped me to understand a variety of subjects ranging from environmental, social and economical studies to the learning of scientific studies. It also built in me a certain amount of independence."
+  }
   
 ]
 
