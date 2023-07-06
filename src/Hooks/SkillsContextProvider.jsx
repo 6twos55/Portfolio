@@ -41,7 +41,7 @@ export const SkillsContextProvider = ({children}) => {
         }
     ]
     
-    const technologies = ["HTML", "CSS", "Sass","JavaScript", "React.js","Node.js", "Express", "MongoDB", "Java", "Kotlin", "Figma", "Python", "Firebase", "Bootstrap", "Material UI", "C#", "Git"]
+    const technologies = ["HTML", "Sass", "JavaScript(ES6+)", "React.js", "Node.js", "Express", "MongoDB", "Java", "Kotlin", "TypeScript", "Figma", "Python", "Bootstrap", "C#", "Git", "Django"]
 
     const Projects = [
       {
@@ -60,13 +60,6 @@ export const SkillsContextProvider = ({children}) => {
       prDes:"Thrift-Fashion is an online shopping store built with JavaScript. Thrift-fashion was built by team Achievers in the Techwiz Competition 2022, where I was the team leader.",
       gitLink:"https://github.com/6twos55/Thrift-fashion"
 
-      },
-      {
-      prImg:require("../Assets/match-game.png"),
-      prName:"Match Game",
-      prSiteLink:"https://match-cardgame.netlify.app/",
-      prDes:"Match Game is a simple matching game of cards built with Javascript. Enjoy a short yet enjoyably challenging game of choice as you advance through the levels!",
-      gitLink:"https://github.com/6twos55/Match-game"
       },
       {
       prImg:require("../Assets/space-shooter.png"),
