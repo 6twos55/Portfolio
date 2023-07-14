@@ -5,7 +5,7 @@ import Skills from '../Components/Skills';
 import { IconArrowSquareOut, IconGithubLogo } from '@vtex/phosphor-icons';
 
 const LandingPage = () => {
-const { codeSnippets, Projects} =  useSkills();
+const { codeSnippets, Projects } =  useSkills();
  
 const Education = [
   {
