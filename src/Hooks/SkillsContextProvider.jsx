@@ -65,7 +65,7 @@ export const SkillsContextProvider = ({children}) => {
       prImg:require("../Assets/space-shooter.png"),
       prName:"Space Shooter",
       prSiteLink:"https://spacerocks-shooter.netlify.app/",
-      prDes:"Space Shooter is a shooting game, more or less, created with Javascript. Use the arrow keys to shoot falling rocks and gain points.",
+      prDes:"Space Shooter is a shooting game, more or less, created with Javascript. Use the arrow keys to shoot falling rocks and gain points. Optimized only for desktop views.",
       gitLink:"https://github.com/6twos55/Space-shooter"
       },
       {
