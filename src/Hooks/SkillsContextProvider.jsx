@@ -53,6 +53,14 @@ export const SkillsContextProvider = ({children}) => {
 
       },
       {
+        prImg:require("../Assets/blog-base.png"),
+        prName:"BlogBase",
+        prSiteLink:"https://blogbase-app.vercel.app",
+        prDes:"BlogBase is a CRUD blog posting application created using MERN. Home to all your casual insensitive blogs! Blogs will be refreshed every ten minutes...",
+        gitLink:"https://github.com/6twos55/BlogBase"
+  
+        },
+      {
 
       prImg:require("../Assets/thrift-fashion.png"),
       prName:"Thrift Fashion Store",
