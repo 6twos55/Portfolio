@@ -45,43 +45,49 @@ export const SkillsContextProvider = ({children}) => {
 
     const Projects = [
       {
-      prImg:require("../Assets/ip-address.png"),
-      prName:"IP Address Tracker",
-      prSiteLink:"https://ipaddress-tracker-location.netlify.app",
-      prDes:"IP Address Tracker is an IP address finder built with HTML, CSS and Javascript API. IP Address looks for the location, timezone and ISP of the inputed IP address.",
-      gitLink:"https://github.com/6twos55/ip-address-tracker"
-
-      },
-      {
         prImg:require("../Assets/blog-base.png"),
         prName:"BlogBase",
         prSiteLink:"https://blogbase-app.vercel.app",
         prDes:"BlogBase is a CRUD blog posting application created using MERN. Home to all your casual insensitive posts. Blogs will reset every ten minutes...",
         gitLink:"https://github.com/6twos55/BlogBase"
   
-        },
+      },
       {
-
-      prImg:require("../Assets/thrift-fashion.png"),
-      prName:"Thrift Fashion Store",
-      prSiteLink:"https://thrift-fashion-secondhand.netlify.app",
-      prDes:"Thrift-Fashion is an online shopping store built with JavaScript. Thrift-fashion was built by team Achievers in the Techwiz Competition 2022, where I was the team leader.",
-      gitLink:"https://github.com/6twos55/Thrift-fashion"
+        prImg:require("../Assets/thrift-fashion.png"),
+        prName:"Thrift Fashion Store",
+        prSiteLink:"https://thrift-fashion-secondhand.netlify.app",
+        prDes:"Thrift fashion is an online shopping store built with JavaScript. Thrift-fashion was built by team Achievers in the Techwiz Competition 2022, where I was team leader.",
+        gitLink:"https://github.com/6twos55/Thrift-fashion"
 
       },
       {
-      prImg:require("../Assets/space-shooter.png"),
-      prName:"Space Shooter",
-      prSiteLink:"https://spacerocks-shooter.netlify.app/",
-      prDes:"Space Shooter is a shooting game, more or less, created with Javascript. Use the arrow keys to shoot falling rocks and gain points. Optimized only for desktop views.",
-      gitLink:"https://github.com/6twos55/Space-shooter"
+        prImg:require("../Assets/space-shooter.png"),
+        prName:"Space Shooter",
+        prSiteLink:"https://spacerocks-shooter.netlify.app/",
+        prDes:"Space Shooter is a shooting game; more or less, created with Javascript. Use the arrow keys to shoot falling rocks and gain points. Optimized for desktop views only.",
+        gitLink:"https://github.com/6twos55/Space-shooter"
       },
       {
-      prImg:require("../Assets/advice-generator.png"),
-      prName:"Advice Generator",
-      prSiteLink:"https://advice-generator-dice.netlify.app/",
-      prDes:"An advice generator built with Javascript API. It generates random helpful tips per button click.",
-      gitLink:"https://github.com/6twos55/Advice-generator"
+        prImg:require("../Assets/ip-address.png"),
+        prName:"IP Address Tracker",
+        prSiteLink:"https://ipaddress-tracker-location.netlify.app",
+        prDes:"IP Address Tracker is an IP address finder built with HTML, CSS and Javascript API. IP Address looks for the location, timezone and ISP of the inputed IP address.",
+        gitLink:"https://github.com/6twos55/ip-address-tracker"
+      },
+      {
+        prImg:require("../Assets/first-fashion.png"),
+        prName:"First Fashion",
+        prSiteLink:"https://thrift-fashion-secondhand.netlify.app",
+        prDes:"First fashion is a brand showcasing store built with HTML. First fashion was built as a school project for knowledge broadening and skill acquisition.",
+        gitLink:"https://github.com/6twos55/First-Fashion"
+
+      },
+      {
+        prImg:require("../Assets/advice-generator.png"),
+        prName:"Advice Generator",
+        prSiteLink:"https://advice-generator-dice.netlify.app/",
+        prDes:"An advice generator built with Javascript API. It generates random helpful tips per button click.",
+        gitLink:"https://github.com/6twos55/Advice-generator"
       }
     ]
 

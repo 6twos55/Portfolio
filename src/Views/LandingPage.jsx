@@ -43,14 +43,14 @@ const sixtusAge = new Date().getFullYear() - 2003
           <div className="header-Title" >
             <span> {codeSnippets.h1Open} </span>
             <h1>
-              {sixtusAge} y/o Software Engineer creating intuitive and user-friendly experiences.
+              {sixtusAge} y/o freelancing Software Engineer creating intuitive and user-friendly experiences.
             </h1>
             <span>{codeSnippets.h1Close}</span> 
           </div>
           <div className="header-Body" id='About'>
             <span> {codeSnippets.pOpen} </span>
             <h3>
-              Hi there, I'm <span>Sixtus Nwaogu</span> a software engineer. <br /> I'm a software developer with a strong interest in creating user-friendly experiences. <br /> I have developed refined skills in problem solving over the course of the development of a number of applications. <br /> I specialise in building fullstack web applications and mobile applications with a focus on usabilty and simplicity.
+              Hi there, I'm <span>Sixtus Nwaogu</span>. <br /> I'm a software developer with a strong interest in creating user-friendly experiences. <br /> I have developed refined skills in problem solving over the course of the development of a number of applications. <br /> I specialise in building fullstack web applications and mobile applications with a focus on usabilty and simplicity.
             </h3>
             <span>{codeSnippets.pClose}</span> 
           </div>
@@ -71,7 +71,7 @@ const sixtusAge = new Date().getFullYear() - 2003
                         <span>{education.date}</span>
                       </span>
                       <span className="education-Location">
-                        <h5>{education.institute}</h5>
+                        <h5 style={{marginBottom: '3px'}}>{education.institute}</h5>
                         <p> {education.location} </p>
                       </span>
                       <span className="education-Body">
@@ -97,7 +97,7 @@ const sixtusAge = new Date().getFullYear() - 2003
                     <span> {award.date} </span>
                   </span>
                   <span className="competition-Description">
-                    <p> {award.team} </p>
+                    <p style={{marginTop: '3px'}}> {award.team} </p>
                   </span>
                   </div>
               </div>

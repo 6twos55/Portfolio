@@ -48,7 +48,9 @@
           span {
             @extend %Intro-Ptag;
             padding-left: 0;
-            color: $link-Hover;
+            color: rgb(0, 0, 214);
+            font-size: 18px;
+            font-weight: 600;
           }
         }
       }
