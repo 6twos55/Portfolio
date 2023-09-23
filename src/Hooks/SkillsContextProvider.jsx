@@ -47,7 +47,7 @@ export const SkillsContextProvider = ({children}) => {
       {
         prImg:require("../Assets/blog-base.png"),
         prName:"BlogBase",
-        prSiteLink:"https://blogbase-app.vercel.app",
+        prSiteLink:"https://blogbase-app.vercel.app/",
         prDes:"BlogBase is a CRUD blog posting application created using MERN. Home to all your casual insensitive posts. Blogs will reset every ten minutes...",
         gitLink:"https://github.com/6twos55/BlogBase"
   
@@ -55,7 +55,7 @@ export const SkillsContextProvider = ({children}) => {
       {
         prImg:require("../Assets/thrift-fashion.png"),
         prName:"Thrift Fashion Store",
-        prSiteLink:"https://thrift-fashion-secondhand.netlify.app",
+        prSiteLink:"https://thrift-fashion-secondhand.netlify.app/",
         prDes:"Thrift fashion is an online shopping store built with JavaScript. Thrift-fashion was built by team Achievers in the Techwiz Competition 2022, where I was team leader.",
         gitLink:"https://github.com/6twos55/Thrift-fashion"
 
@@ -70,14 +70,14 @@ export const SkillsContextProvider = ({children}) => {
       {
         prImg:require("../Assets/ip-address.png"),
         prName:"IP Address Tracker",
-        prSiteLink:"https://ipaddress-tracker-location.netlify.app",
+        prSiteLink:"https://ipaddress-tracker-location.netlify.app/",
         prDes:"IP Address Tracker is an IP address finder built with HTML, CSS and Javascript API. IP Address looks for the location, timezone and ISP of the inputed IP address.",
         gitLink:"https://github.com/6twos55/ip-address-tracker"
       },
       {
         prImg:require("../Assets/first-fashion.png"),
         prName:"First Fashion",
-        prSiteLink:"https://thrift-fashion-secondhand.netlify.app",
+        prSiteLink:"https://firstfashion-project.netlify.app/",
         prDes:"First fashion is a brand showcasing store built with HTML. First fashion was built as a school project for knowledge broadening and skill acquisition.",
         gitLink:"https://github.com/6twos55/First-Fashion"
 
