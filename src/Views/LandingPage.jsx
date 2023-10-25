@@ -50,7 +50,7 @@ const sixtusAge = new Date().getFullYear() - 2003
           <div className="header-Body" id='About'>
             <span> {codeSnippets.pOpen} </span>
             <h3>
-              Hi there, I'm <span>Sixtus Nwaogu</span>. <br /> I'm a software developer with a strong interest in creating user-friendly experiences. <br /> I have developed refined skills in problem solving over the course of the development of a number of applications. <br /> I specialise in building fullstack web applications and mobile applications with a focus on usabilty and simplicity.
+              Hi there, I'm <span>Sixtus Nwaogu</span>. <br /> I'm a software developer with a strong interest in creating user-friendly experiences. <br /> I have developed refined skills in problem solving over the course of developing a number of applications. <br /> I specialize in building fullstack web applications and mobile applications with a focus on usabilty and simplicity.
             </h3>
             <span>{codeSnippets.pClose}</span> 
           </div>
