@@ -41,9 +41,17 @@ export const SkillsContextProvider = ({children}) => {
         }
     ]
     
-    const technologies = ["HTML", "Sass", "JavaScript(ES6+)", "React.js", "Node.js", "Express", "MongoDB", "Java", "Kotlin", "TypeScript", "Figma", "Python", "Bootstrap", "C#", "Git", "Material UI"]
+    const technologies = ["HTML", "Sass", "JavaScript(ES6+)", "React.js", "Node.js", "Express", "MongoDB", "Java", "Kotlin", "TypeScript", "Figma", "Python", "Bootstrap", "C#", "Git", "Material UI", "GraphQL"]
 
     const Projects = [
+      {
+        prImg:require("../Assets/bambi-art.png"),
+        prName:"Bambi's Designs",
+        prSiteLink:"https://bambi-design.vercel.app/",
+        prDes:"A cloth and resin web application, bringing people to diverse forms of art in a single house!",
+        gitLink:"https://github.com/6twos55/Bambi-Design"
+  
+      },
       {
         prImg:require("../Assets/blog-base.png"),
         prName:"BlogBase",
