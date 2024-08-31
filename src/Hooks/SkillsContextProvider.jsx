@@ -48,7 +48,7 @@ export const SkillsContextProvider = ({children}) => {
         prImg:require("../Assets/bambi-art.png"),
         prName:"Bambi's Designs",
         prSiteLink:"https://bambi-design.vercel.app/",
-        prDes:"A cloth and resin web application, bringing people to diverse forms of art in a single house!",
+        prDes:"A cloth and resin web application, bringing people from diverse forms of art to a single house!",
         gitLink:"https://github.com/6twos55/Bambi-Design"
   
       },
@@ -56,7 +56,7 @@ export const SkillsContextProvider = ({children}) => {
         prImg:require("../Assets/blog-base.png"),
         prName:"BlogBase",
         prSiteLink:"https://blogbase-app.vercel.app/",
-        prDes:"BlogBase is a CRUD blog posting application created using MERN. Home to all your casual insensitive posts. Blogs will reset every ten minutes...",
+        prDes:"BlogBase is a CRUD blog posting application created using MERN. Home to all your casual day-to-day posts.",
         gitLink:"https://github.com/6twos55/BlogBase"
   
       },
@@ -64,7 +64,7 @@ export const SkillsContextProvider = ({children}) => {
         prImg:require("../Assets/thrift-fashion.png"),
         prName:"Thrift Fashion Store",
         prSiteLink:"https://thrift-fashion-secondhand.netlify.app/",
-        prDes:"Thrift fashion is an online shopping store built with JavaScript. Thrift-fashion was built by team Achievers in the Techwiz Competition 2022, where I was team leader.",
+        prDes:"Thrift Fashion is an online shopping platform developed using JavaScript. It was created by Team Achievers during the Techwiz Competition 2022, where I was the team leader.",
         gitLink:"https://github.com/6twos55/Thrift-fashion"
 
       },
@@ -72,21 +72,21 @@ export const SkillsContextProvider = ({children}) => {
         prImg:require("../Assets/space-shooter.png"),
         prName:"Space Shooter",
         prSiteLink:"https://spacerocks-shooter.netlify.app/",
-        prDes:"Space Shooter is a shooting game; more or less, created with Javascript. Use the arrow keys to shoot falling rocks and gain points. Optimized for desktop views only.",
+        prDes:"Space Shooter is a JavaScript-based shooting game where players use the arrow keys to shoot falling rocks and earn points. The game is optimized for desktop views.",
         gitLink:"https://github.com/6twos55/Space-shooter"
       },
       {
         prImg:require("../Assets/ip-address.png"),
         prName:"IP Address Tracker",
         prSiteLink:"https://ipaddress-tracker-location.netlify.app/",
-        prDes:"IP Address Tracker is an IP address finder built with HTML, CSS and Javascript API. IP Address looks for the location, timezone and ISP of the inputed IP address.",
+        prDes:"IP Address Tracker is an IP address lookup tool developed using HTML, CSS, and JavaScript API. It retrieves the location, timezone, and ISP information for the entered IP address.",
         gitLink:"https://github.com/6twos55/ip-address-tracker"
       },
       {
         prImg:require("../Assets/first-fashion.png"),
         prName:"First Fashion",
         prSiteLink:"https://firstfashion-project.netlify.app/",
-        prDes:"First fashion is a brand showcasing store built with HTML. First fashion was built as a school project for knowledge broadening and skill acquisition.",
+        prDes:"First Fashion is a brand showcase website developed using HTML. It was created as a school project aimed at broadening knowledge and enhancing skills.",
         gitLink:"https://github.com/6twos55/First-Fashion"
 
       },
@@ -94,7 +94,7 @@ export const SkillsContextProvider = ({children}) => {
         prImg:require("../Assets/advice-generator.png"),
         prName:"Advice Generator",
         prSiteLink:"https://advice-generator-dice.netlify.app/",
-        prDes:"An advice generator built with Javascript API. It generates random helpful tips per button click.",
+        prDes:"An Advice Generator built using the JavaScript API, providing random helpful tips with each button click.",
         gitLink:"https://github.com/6twos55/Advice-generator"
       }
     ]
