@@ -29,6 +29,7 @@
       .resume {
         border: 1px solid $secondary-Purple;
         padding: 4px 7px;
+        background-color: $secondary-Purple;
         border-radius: 4px;
 
         &:hover {
@@ -119,6 +120,7 @@
         .inner-Links-Body {
           .res {
             border: 1px solid $secondary-Purple;
+            background-color: $secondary-Purple;
             padding: 3px 5px;
             border-radius: 5px;
           }

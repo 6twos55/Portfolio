@@ -6,7 +6,7 @@ import { IconArrowSquareOut, IconGithubLogo } from '@vtex/phosphor-icons';
 import techwiz3Award from "../Assets/Techwiz3_Award.pdf";
 
 const LandingPage = () => {
-const { codeSnippets, Projects} =  useSkills();
+const { codeSnippets, Projects } =  useSkills();
  
 const Education = [
   {
@@ -16,6 +16,13 @@ const Education = [
     location :"Abeokuta, Nigeria.",
     comment : "The experience gathered at Aptech was what laid the foundation of my software development career. I learnt a vast majority of programming languages in the duration of my course, which gave me insights on how to structure my learning focus."
   },
+  {
+    major: "Secondary School Education",
+    date: "September 2013 - September 2019",
+    institute: "Saint Augustine's Seminary",
+    location: "Ebonyi, Nigeria.",
+    comment: "My secondary school experience helped me to understand a variety of subjects ranging from environmental, social and economical studies to the learning of scientific studies. It also built in me a certain amount of independence."
+  }
   
 ]
 
@@ -37,7 +44,7 @@ const sixtusAge = new Date().getFullYear() - 2003
           <div className="header-Title" >
             <span> {codeSnippets.h1Open} </span>
             <h1>
-              {sixtusAge} y/o Software Engineer creating intuitive and user-friendly experiences.
+              {sixtusAge} y/o freelancing Software Engineer creating intuitive and user-friendly experiences.
             </h1>
             <span>{codeSnippets.h1Close}</span> 
           </div>
@@ -66,7 +73,7 @@ const sixtusAge = new Date().getFullYear() - 2003
                         <span>{education.date}</span>
                       </span>
                       <span className="education-Location">
-                        <h5>{education.institute}</h5>
+                        <h5 style={{marginBottom: '3px'}}>{education.institute}</h5>
                         <p> {education.location} </p>
                       </span>
                       <span className="education-Body">
