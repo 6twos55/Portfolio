@@ -1,13 +1,19 @@
+import React, { useEffect } from 'react';
 import "./Styles/App.scss";
 import LandingPage from "./Views/LandingPage";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import { Routes, Route } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-import React from 'react'
 import { SkillsContextProvider } from "./Hooks/SkillsContextProvider";
 
 const App = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
 
   return (
     <SkillsContextProvider>

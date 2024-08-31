@@ -7,12 +7,12 @@ const {skills,technologies} = useSkills();
   return (
     <section className="skill-Tech" id='Skills'>
       <section className="skill-Container" > 
-        <h3>Skills</h3>
+        <h3 data-aos-duration="800" data-aos="fade-right">Skills</h3>
         <div className="skills-List-Container">
           {
             skills.map((skill,index) => (
               (
-              <div className="skill" key={index} >
+              <div data-aos-duration="800" data-aos="fade-up" className="skill" key={index} >
                 <div className="skills">
                   <span className="skill-Icon-Container">
                   <span>
@@ -31,12 +31,12 @@ const {skills,technologies} = useSkills();
         </div>
       </section>
       <section className="technologies-Container">
-        <h3>Technologies</h3>
-        <p>Here are some of the technologies I've learnt and worked with.</p>
+        <h3 data-aos-duration="800" data-aos="fade-right">Technologies</h3>
+        <p data-aos-duration="800" data-aos="fade-left">Here are some of the technologies I've learnt and worked with.</p>
         <div className="tech-List-Container">
           {
             technologies.map((technology,index) => (
-              <span className="technology" key={index}>
+              <span data-aos-duration="800" data-aos="fade-up" className="technology" key={index}>
                 <p>{technology}</p>
               </span>
             ))

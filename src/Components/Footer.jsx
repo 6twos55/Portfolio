@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer >
       <div className="footer-Container" id='Contact'>
-        <div className="contact">
+        <div data-aos-duration="1000" data-aos="fade-up" className="contact">
           <h2>Hey, I'd love to hear from you.</h2>
           <p>Get in touch. I'm open for immediate opportunities!</p>
           <a href='mailto:sixtusnwaogu@gmail.com'  className="mail">

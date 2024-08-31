@@ -3,6 +3,8 @@ import "../Styles/LandingPage.scss";
 import { useSkills } from '../Hooks/SkillsContextProvider';
 import Skills from '../Components/Skills';
 import { IconArrowSquareOut, IconGithubLogo } from '@vtex/phosphor-icons';
+import techwiz3Award from "../Assets/Techwiz3_Award.pdf";
+
 const LandingPage = () => {
 const { codeSnippets, Projects} =  useSkills();
  
@@ -19,7 +21,7 @@ const Education = [
 
 const Awards = [
   {
-    position: "Third Runner Up Techwiz Global Competition",
+    position: `Third Runner Up Techwiz Global Competition`,
     date:"October 2022.",
     team:"Team leader; Team Achievers."
   },
@@ -42,7 +44,8 @@ const sixtusAge = new Date().getFullYear() - 2003
           <div className="header-Body" id='About'>
             <span> {codeSnippets.pOpen} </span>
             <h3>
-              Hi there, I'm <span>Sixtus Nwaogu</span> a software engineer. <br /> I'm a software developer with a strong interest in creating user-friendly experiences. <br /> I have developed refined skills in problem solving over the course of the development of a number of applications. <br /> I specialise in building fullstack web applications and mobile applications with a focus on usabilty and simplicity.
+              Hello, I'm <span style={{ color: "#0000ff" }}>Sixtus Nwaogu</span>.<br />
+              I'm a dedicated software developer with a passion for creating user-friendly software solutions. <br /> Over time, I've honed my problem-solving skills through the development of various applications. <br /> I specialize in building fullstack web and mobile applications, with a strong focus on usability and simplicity.
             </h3>
             <span>{codeSnippets.pClose}</span> 
           </div>
@@ -50,13 +53,13 @@ const sixtusAge = new Date().getFullYear() - 2003
 
         <section className='education-Container' id='Education'>
           <div className="education">
-            <h2>Education</h2>
+            <h2 data-aos-duration="800" data-aos="fade-right">Education</h2>
 
             <div className="education-Institutions">
               <div className="aptech-Container">
                 {
                   Education.map((education, index) => (
-                    <div className="aptech" key={index}>
+                    <div data-aos-duration="800" data-aos="fade-left" className="aptech" key={index}>
                       <div className="aptech-Items">
                          <span className="education-Title">
                         <h3>{education.major}</h3>
@@ -78,21 +81,23 @@ const sixtusAge = new Date().getFullYear() - 2003
           </div>
 
           <div className="awards-Container">
-            <h3>Awards</h3>
+            <h3 data-aos-duration="800" data-aos="fade-right">Awards</h3>
             <div className="awards">
             {
               Awards.map((award, index) => (
-                <div className="inner-Awards" key={index}>
-                  <div className="award-Item">
-                    <span className="competition">
-                    <h4> {award.position} </h4>
-                    <span> {award.date} </span>
-                  </span>
-                  <span className="competition-Description">
-                    <p> {award.team} </p>
-                  </span>
+                <a data-aos-duration="800" data-aos="fade-left" className='techWizContainer' href={techwiz3Award} target='_blank' rel='noreferrer' key={index}>
+                  <div className="inner-Awards" >
+                    <div className="award-Item">
+                      <span className="competition">
+                        <h4> {award.position }</h4>
+                        <span> {award.date} </span>
+                      </span>
+                      <span className="competition-Description">
+                        <p> {award.team} </p>
+                      </span>
+                    </div>
                   </div>
-              </div>
+                </a>
               ))
             }
             </div>
@@ -103,13 +108,14 @@ const sixtusAge = new Date().getFullYear() - 2003
 
 
         <section className="featured-Projects-Container">
-          <h3>Featured Projects</h3>
-          <p>Here are some of the projects I've worked on personally, or as a member of a team.</p>
+          <h3 data-aos-duration="800" data-aos="fade-right">Featured Projects</h3>
+          <p data-aos-duration="800" data-aos="fade-left">Here are some of the projects I've worked on personally, or as a member of a team.</p>
           <div className="projects-Container">
 
               {
                 Projects.map((project,index) => (
-                  <div className="project" key={index}>
+                  
+                  <div data-aos-duration="800" data-aos="zoom-in-up" className="project" key={index}>
                     <div className="inner-Project-Container">
                       <img className='img' src={project.prImg} alt={project.prName} />
                       <span className="project-Name">

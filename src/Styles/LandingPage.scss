@@ -105,8 +105,9 @@
                   }
                 }
                 .education-Location {
+                  padding: 0 0 10px 0;
                   h5 {
-                    line-height: 15px;
+                    line-height: 30px;
                     @extend %element-Tags;
                     font-family: "IBM Plex Mono", -apple-system,
                       BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
@@ -147,12 +148,22 @@
         .awards {
           @include display($justify: unset, $direction: column);
           gap: 20px;
+          
+          .techWizContainer {
+            text-decoration: none;
+          
+            &:hover {
+              cursor: pointer !important;
+            }
+          }
+
           .inner-Awards {
             border: 1px solid $link-Hover;
             border-radius: 5px;
             width: 100%;
             height: 140px;
             @include display();
+            
             .award-Item {
               width: 93%;
               .competition {
@@ -176,7 +187,7 @@
               }
               .competition-Description {
                 p {
-                  line-height: 20px;
+                  line-height: 30px;
                   @extend %element-Tags;
                   font-family: "IBM Plex Mono", -apple-system,
                     BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
@@ -188,7 +199,7 @@
             }
             &:hover {
               border: 1.3px solid $secondary-Purple;
-              cursor: default;
+              cursor: pointer;
             }
           }
         }
@@ -218,7 +229,7 @@
             width: inherit;
             height: 210px;
             border-radius: 5px;
-            border: 1px solid rgb(10, 16, 200);
+            border: 1px solid $link-Hover;
             @include display($direction: column);
             .skills {
               width: 80%;
@@ -274,7 +285,7 @@
             height: 80px;
             @include display();
             border-radius: 5px;
-            border: 1px solid rgb(10, 16, 200);
+            border: 1px solid $link-Hover;
             p {
               @include display();
               @extend %Intro-Ptag;
