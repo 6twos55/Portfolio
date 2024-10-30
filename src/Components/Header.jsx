@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "../Styles/Header.scss"
-import sixtusNwaoguResume from "../Assets/Sixtus_Nwaogu_CV.pdf";
+import sixtusNwaoguResume from "../Assets/Sixtus_Nwaogu.pdf";
 import { IconListDashes,IconCopyright,IconX,IconGithubLogo,IconTwitterLogo,IconLinkedinLogo,IconInstagramLogo } from '@vtex/phosphor-icons'
 
 const Header = () => {
