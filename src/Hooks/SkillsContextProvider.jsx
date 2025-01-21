@@ -1,5 +1,5 @@
 import React, { createContext,useContext } from 'react'
-import { IconGlobe,IconAppleLogo,IconAndroidLogo,IconFolder,IconDatabase, IconCloud, IconFigmaLogo } from '@vtex/phosphor-icons';
+import { IconGlobe,IconFolder,IconDatabase, IconCloud } from '@vtex/phosphor-icons';
 
 const SkillsContext = createContext();
 
@@ -21,23 +21,12 @@ export const SkillsContextProvider = ({children}) => {
         {
         skillIconOne : (<IconGlobe size={size} />),
         skillIconTwo : (<IconFolder size={size}/>),
-        skillText: "Frontend Development"
+        skillText: "Frontend Web Development"
         },
         {
         skillIconOne : (< IconCloud size = {size} />),
         skillIconTwo : (<IconDatabase size = {size}/>),
         skillText: "Backend Development"
-        },
-        {
-        skillIconOne : (<IconAndroidLogo size={size}/>),
-        skillIconTwo : (<IconAppleLogo size={size} />),
-        skillText: "Mobile App Development"
-        },
-        
-        {
-        skillIconOne : (< IconFigmaLogo size= {size}/>),
-        skillIconTwo : "",
-        skillText: "UI/UX Design"
         }
     ]
     
@@ -74,28 +63,6 @@ export const SkillsContextProvider = ({children}) => {
         prSiteLink:"https://spacerocks-shooter.netlify.app/",
         prDes:"Space Shooter is a JavaScript-based shooting game where players use the arrow keys to shoot falling rocks and earn points. The game is optimized for desktop views.",
         gitLink:"https://github.com/6twos55/Space-shooter"
-      },
-      {
-        prImg:require("../Assets/ip-address.png"),
-        prName:"IP Address Tracker",
-        prSiteLink:"https://ipaddress-tracker-location.netlify.app/",
-        prDes:"IP Address Tracker is an IP address lookup tool developed using HTML, CSS, and JavaScript API. It retrieves the location, timezone, and ISP information for the entered IP address.",
-        gitLink:"https://github.com/6twos55/ip-address-tracker"
-      },
-      {
-        prImg:require("../Assets/first-fashion.png"),
-        prName:"First Fashion",
-        prSiteLink:"https://firstfashion-project.netlify.app/",
-        prDes:"First Fashion is a brand showcase website developed using HTML. It was created as a school project aimed at broadening knowledge and enhancing skills.",
-        gitLink:"https://github.com/6twos55/First-Fashion"
-
-      },
-      {
-        prImg:require("../Assets/advice-generator.png"),
-        prName:"Advice Generator",
-        prSiteLink:"https://advice-generator-dice.netlify.app/",
-        prDes:"An Advice Generator built using the JavaScript API, providing random helpful tips with each button click.",
-        gitLink:"https://github.com/6twos55/Advice-generator"
       }
     ]
 
