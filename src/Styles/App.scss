@@ -9,12 +9,11 @@
 
 body {
   background: #000000;
+  overflow-x: hidden;
 }
 
 .app-Container {
   width: 100%;
-  // height: auto;
-  // height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 70px 1fr 150px;

@@ -1,6 +1,5 @@
-import React from 'react'
 import "../Styles/footer.scss";
-import { IconEnvelope,IconGithubLogo, IconLinkedinLogo, IconTwitterLogo, IconInstagramLogo, IconCopyright } from '@vtex/phosphor-icons';
+import { IconEnvelope,IconGithubLogo, IconLinkedinLogo, IconTwitterLogo, IconInstagramLogo } from '@vtex/phosphor-icons';
 
 const Footer = () => {
   return (
@@ -8,7 +7,7 @@ const Footer = () => {
       <div className="footer-Container" id='Contact'>
         <div data-aos-duration="1000" data-aos="fade-up" className="contact">
           <h2>Hey, I'd love to hear from you.</h2>
-          <p>Get in touch. I'm open for immediate opportunities!</p>
+          <p>Want to get in touch? I'm open for collaborations!</p>
           <a href='mailto:sixtusnwaogu@gmail.com'  className="mail">
             <span><IconEnvelope /></span>
             <p>Send me a mail.</p>
@@ -25,8 +24,7 @@ const Footer = () => {
         </div>
         <div className="all-Rights-Container">
           <span className="rights-Reserved">
-            <span><IconCopyright fontSize={2}/></span>
-            <small>{new Date().getFullYear()} Sixtus Nwaogu. All Rights Reserved.</small>
+            <small>&copy; {new Date().getFullYear()} Sixtus Nwaogu. All Rights Reserved.</small>
           </span>
           <span className="built">
             <small>Built with React.js and Sass.</small>

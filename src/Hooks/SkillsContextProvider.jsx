@@ -30,7 +30,7 @@ export const SkillsContextProvider = ({children}) => {
         }
     ]
     
-    const technologies = ["HTML", "Sass", "JavaScript(ES6+)", "React.js", "Node.js", "Express", "MongoDB", "Java", "Kotlin", "TypeScript", "Figma", "Python", "Bootstrap", "C#", "Git", "Material UI", "GraphQL"]
+    const technologies = ["React.js", "Next.js", "Sass", "TailwindCSS", "JavaScript(ES6+)", "Node.js", "Express", "MongoDB", "TypeScript", "Figma", "Python", "Git", "Material UI", "Shadcn", "GraphQL (L)", "Jest (L)", "Flutter (L)"]
 
     const Projects = [
       {

@@ -1,4 +1,3 @@
-import React from 'react'
 import "../Styles/LandingPage.scss";
 import { useSkills } from '../Hooks/SkillsContextProvider';
 
@@ -30,9 +29,10 @@ const {skills,technologies} = useSkills();
           }
         </div>
       </section>
+      
       <section className="technologies-Container">
         <h3 data-aos-duration="800" data-aos="fade-right">Technologies</h3>
-        <p data-aos-duration="800" data-aos="fade-left">Here are some of the technologies I've learnt and worked with.</p>
+        <p data-aos-duration="800" data-aos="fade-left" style={{lineHeight: "20px", marginBottom: '20px'}}>Here are some of the technologies I've learnt and worked with. (L) means currently learning.</p>
         <div className="tech-List-Container">
           {
             technologies.map((technology,index) => (

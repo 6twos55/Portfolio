@@ -7,20 +7,22 @@
 
 .landingpage-Container {
   width: 100%;
-  height: 100%;
   @include display($align: unset);
 
   .inner-Landingpage-Container {
     width: 75%;
+    height: fit-content !important;
     display: flex;
     flex-direction: column;
     gap: 50px;
     justify-content: center;
+
     .header-Header-Container {
       height: 800px;
       @include display($direction: column, $justify: space-around);
+
       .header-Title {
-        height: 280px;
+        height: fit-content;
         @include display(
           $direction: column,
           $align: unset,
@@ -34,7 +36,7 @@
         }
       }
       .header-Body {
-        height: 280px;
+        height: fit-content;
         @include display(
           $direction: column,
           $align: unset,
@@ -119,7 +121,7 @@
                     line-height: 20px;
                     @extend %element-Tags;
                     font-size: 15px;
-                    color: $link-Hover;
+                    color: $sub-blue;
                     font-family: "IBM Plex Mono", -apple-system,
                       BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
                       Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -127,7 +129,7 @@
                 }
                 .education-Body {
                   @extend %Intro-Ptag;
-                  line-height: 20px;
+                  line-height: 25px;
                   padding-left: 0px;
                 }
               }
@@ -195,7 +197,7 @@
                     BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
                     Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
                   font-size: 15px;
-                  color: $link-Hover;
+                  color: $secondary-Purple;
                 }
               }
             }
@@ -214,7 +216,6 @@
       gap: 190px;
 
       .skill-Container {
-        cursor: pointer;
         height: 40%;
         @include display($direction: column, $justify: unset);
         gap: 40px;
@@ -278,7 +279,6 @@
           font-size: 12px;
         }
         .tech-List-Container {
-          cursor: pointer;
           display: grid;
           grid-template-columns: repeat(5, 1fr);
           gap: 10px;
@@ -305,7 +305,7 @@
 
     .featured-Projects-Container {
       @include display($direction: column, $justify: unset);
-      gap: 20px;
+      gap: 30px;
       h3 {
         height: 50px;
         @extend %topic-Headers;
@@ -315,6 +315,7 @@
         @extend %Intro-Ptag;
         padding-left: 0;
         font-size: 12px;
+        line-height: 20px;
       }
 
       .projects-Container {
@@ -386,6 +387,7 @@
               p {
                 @extend %Intro-Ptag;
                 padding-left: 0;
+                line-height: 28px;
               }
             }
             .git-View {
@@ -416,6 +418,7 @@
 @media screen and (max-width: 1024px) {
   .inner-Landingpage-Container {
     width: 90% !important;
+    
     .header-Header-Container {
       height: 650px !important;
       .header-Title {
@@ -511,7 +514,7 @@
 @media screen and (max-width: 530px) {
   .inner-Landingpage-Container {
     .header-Header-Container {
-      height: 850px !important;
+      height: fit-content !important;
       gap: 70px !important;
       .header-Title {
         height: auto !important;

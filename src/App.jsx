@@ -22,7 +22,7 @@ const App = () => {
         <main>
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="*" element = {<h1>Wrong Page</h1>}/>
+          <Route path="*" element = {<h1 style={{textAlign: 'center'}}>Nothing here</h1>}/>
         </Routes>
         </main>
         <Footer />

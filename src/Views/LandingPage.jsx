@@ -1,4 +1,3 @@
-import React from "react";
 import "../Styles/LandingPage.scss";
 import { useSkills } from "../Hooks/SkillsContextProvider";
 import Skills from "../Components/Skills";
@@ -19,7 +18,7 @@ const LandingPage = () => {
     },
     {
       major: "Secondary School Education",
-      date: "September 2013 - September 2019",
+      date: "September 2013 - September 2019.",
       institute: "Saint Augustine's Seminary",
       location: "Ebonyi, Nigeria.",
       comment:
@@ -58,22 +57,23 @@ const LandingPage = () => {
           <div className="header-Title">
             <span> {codeSnippets.h1Open} </span>
             <h1>
-              {sixtusAge} y/o freelancing Software Engineer creating intuitive
-              and user-friendly experiences.
+              {sixtusAge} y/o Software Engineer creating intuitive and
+              user-friendly experiences.
             </h1>
             <span>{codeSnippets.h1Close}</span>
           </div>
+
           <div className="header-Body" id="About">
             <span> {codeSnippets.pOpen} </span>
             <h3>
               Hello, I'm <span style={{ color: "#0000ff" }}>Sixtus Nwaogu</span>
               .<br />
-              I'm a dedicated software developer with a passion for creating
-              user-friendly software solutions. <br /> Over time, I've honed my
+              I'm a dedicated web developer with a passion for creating
+              user-friendly software. <br /> Over time, I've honed my
               problem-solving skills through the development of various
-              applications. <br /> I specialize in building fullstack web and
-              mobile applications, with a strong focus on usability and
-              simplicity.
+              applications. <br /> I specialize in building full-stack
+              (front-end inclined) web applications, with a strong focus on
+              reusability and simplicity.
             </h3>
             <span>{codeSnippets.pClose}</span>
           </div>
@@ -103,7 +103,7 @@ const LandingPage = () => {
                         <h5 style={{ marginBottom: "3px" }}>
                           {education.institute}
                         </h5>
-                        <p> {education.location} </p>
+                        <p>{education.location}</p>
                       </span>
                       <span className="education-Body">
                         {education.comment}
@@ -133,8 +133,8 @@ const LandingPage = () => {
                   <div className="inner-Awards">
                     <div className="award-Item">
                       <span className="competition">
-                        <h4> {award.position}</h4>
-                        <span> {award.date} </span>
+                        <h4>{award.position}</h4>
+                        <span>{award.date}</span>
                       </span>
                       <span className="competition-Description">
                         <p> {award.team} </p>
@@ -150,13 +150,18 @@ const LandingPage = () => {
         <Skills />
 
         <section className="featured-Projects-Container">
-          <h3 data-aos-duration="800" data-aos="fade-right">
-            Featured Projects
-          </h3>
-          <p data-aos-duration="800" data-aos="fade-left">
-            Here are some of the projects I've worked on personally, or as a
-            member of a team.
-          </p>
+          <div
+            style={{ display: "flex", flexDirection: "column", gap: "20px" }}
+          >
+            <h3 data-aos-duration="800" data-aos="fade-right">
+              Featured Projects
+            </h3>
+            <p data-aos-duration="800" data-aos="fade-left">
+              Here are some of the projects I've worked on personally, or as a
+              member of a team.
+            </p>
+          </div>
+
           <div className="projects-Container">
             {Projects.map((project, index) => (
               <div
@@ -178,13 +183,7 @@ const LandingPage = () => {
                       rel="noreferrer"
                     >
                       <p>{project.prName}&nbsp;</p>
-                      <a
-                        href={project.prSiteLink}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <IconArrowSquareOut className="redirect" />
-                      </a>
+                      <IconArrowSquareOut className="redirect" />
                     </a>
                   </span>
                   <div className="description">
