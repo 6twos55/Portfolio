@@ -55,7 +55,7 @@ const Header = () => {
 
                 <span className="handler">
                   <a href='https://github.com/6twos55' target="_blank" rel='noreferrer' ><IconGithubLogo size = {size}/></a>
-                  <a href='https://linkedin.com/in/sixtus-nwaogu-654005240/' target="_blank" rel='noreferrer' ><IconLinkedinLogo size = {size}/></a>
+                  <a href='https://linkedin.com/in/sixtus-nwaogu/' target="_blank" rel='noreferrer' ><IconLinkedinLogo size = {size}/></a>
                   <a href='https://twitter.com/NwaoguSixtus' target="_blank" rel='noreferrer' ><IconTwitterLogo size = {size}/></a>
                   <a href='https://www.instagram.com/6two_s55/'  target="_blank" rel='noreferrer' ><IconInstagramLogo size = {size}/></a>
                 </span>
