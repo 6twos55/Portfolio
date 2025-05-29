@@ -16,7 +16,7 @@ const Footer = () => {
             <small>My handles</small>
             <span className='li'>
              <a href='https://github.com/6twos55' target="_blank" rel='noreferrer' title='Github'><IconGithubLogo/></a>
-             <a target="_blank" href='https://linkedin.com/in/sixtus-nwaogu-654005240/' rel='noreferrer'  title='LinkedIn'><IconLinkedinLogo/></a>
+             <a target="_blank" href='https://linkedin.com/in/sixtus-nwaogu/' rel='noreferrer'  title='LinkedIn'><IconLinkedinLogo/></a>
              <a target="_blank" href='https://twitter.com/NwaoguSixtus' rel='noreferrer'  title='Twitter'><IconTwitterLogo /></a>
              <a href='https://www.instagram.com/6two_s55/' rel='noreferrer'  target="_blank"  title='Instagram'><IconInstagramLogo/></a>
             </span>
