@@ -1,30 +1,41 @@
 import { useState } from 'react'
 import "../Styles/Header.scss"
 import sixtusNwaoguResume from "../Assets/Sixtus_Nwaogu.pdf";
-import { IconListDashes, IconX, IconGithubLogo, IconTwitterLogo, IconLinkedinLogo, IconInstagramLogo } from '@vtex/phosphor-icons'
+import { IconListDashes, IconX, IconGithubLogo, IconTwitterLogo, IconLinkedinLogo, IconInstagramLogo, IconMoonStars, IconSunDim } from '@vtex/phosphor-icons'
 
 const Header = () => {
-    const sixtus = "Sixtus"
-    const size = 32;
-    const [open,setOpen] = useState("")
-    const [close,setClose] = useState("")
-    const [openCont,setOpenCont] = useState("")
-    const handleClose = () => {
-      setClose("")
-      setOpen("")
-      setOpenCont("")
-    }
-    const handleOpen = () => {
-      setClose("close")
-      setOpen("open")
-      setOpenCont("open")
-    }
+  const sixtus = "Sixtus"
+  const size = 32;
+  const [open,setOpen] = useState("")
+  const [close,setClose] = useState("")
+  const [openCont,setOpenCont] = useState("")
+  const [theme, setTheme] = useState("dark");
+
+  const handleClose = () => {
+    setClose("")
+    setOpen("")
+    setOpenCont("")
+  }
+  const handleOpen = () => {
+    setClose("close")
+    setOpen("open")
+    setOpenCont("open")
+  }
+
+  const handleThemeChange = () => {
+    setTheme(prev => (prev === "dark" ? "light" : "dark"));
+  }
+
   return (
     <header className='header-Container'>
         <nav className="desktop-Nav-Container">
           <a href='#Home' className='sixtus'>{sixtus}</a>
           
           <span className='navlinks-Container'>
+            <div style={{display: 'flex'}} onClick={handleThemeChange}>
+              { theme === "dark" ? <IconSunDim className='svg' size={30} /> : theme === 'light' ? <IconMoonStars className='svg' size={30} /> : '' }
+            </div>
+
             <a href="#About" className="links">About</a>
             <a href="#Education"  className="links">Education</a>
             <a href="#Skills" className="links" >Skills</a>
@@ -36,7 +47,14 @@ const Header = () => {
         <nav className="mobile-Nav-Container" id={openCont}>
           <span className="mobile-Container" id={close}>
             <a href='#Home' className='sixtus'>{sixtus}</a>
-            <IconListDashes onClick={handleOpen} className='svg' size={30} />
+
+            <span>
+              <div style={{display: 'flex'}} onClick={handleThemeChange}>
+                { theme === "dark" ? <IconSunDim className='svg' size={30} /> : theme === 'light' ? <IconMoonStars className='svg' size={30} /> : '' }
+              </div>
+              
+              <IconListDashes onClick={handleOpen} className='svg' size={30} />
+            </span>
           </span>
 
           <span className="mobile-Links-Container" id={open}>

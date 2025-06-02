@@ -9,7 +9,6 @@
 
 body {
   background: #000000;
-  overflow-x: hidden;
 }
 
 .app-Container {
@@ -30,6 +29,7 @@ body {
   main {
     color: white;
     grid-area: Main;
+    overflow: hidden;
   }
 
   footer {

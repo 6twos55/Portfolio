@@ -25,6 +25,12 @@
       width: auto;
       @include display($justify: unset);
       gap: 50px;
+      
+      .svg {
+        width: auto;
+        color: $background-White;
+        cursor: pointer;
+      }
 
       .resume {
         border: 1px solid $secondary-Purple;
@@ -57,7 +63,7 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 850px) {
   .desktop-Nav-Container {
     display: none !important;
   }
@@ -67,6 +73,7 @@
     width: 90% !important;
     margin: 0 auto;
     flex-direction: column !important;
+
     .mobile-Container {
       width: 100%;
       height: inherit;
@@ -80,9 +87,16 @@
         font-family: "Gochi Hand", "Courier New", Courier, monospace;
         text-decoration: none;
       }
-      .svg {
+
+      span {
         width: auto;
-        color: $background-White;
+        @include display();
+        gap: 30px;
+
+        .svg {
+          color: $background-White;
+          cursor: pointer;
+        }
       }
     }
     .mobile-Links-Container {
