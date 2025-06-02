@@ -78,13 +78,14 @@
             gap: 30px;
             .aptech {
               width: 83%;
-              border: 1px solid $link-Hover;
+              border: var(--border-width) solid $link-Hover;
               border-radius: 5px;
               width: 100%;
               height: auto;
               padding: 30px 0;
               @include display($direction: column);
               gap: 6px;
+
               .aptech-Items {
                 width: 93%;
                 @include display($direction: column);
@@ -101,7 +102,7 @@
                   span {
                     width: auto;
                     @extend %element-Tags;
-                    color: $text-White;
+                    color: var(--description-color);
                     font-size: 12px;
                     font-family: "IBM Plex Mono", -apple-system,
                       BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
@@ -135,7 +136,8 @@
               }
 
               &:hover {
-                border: 1.3px solid $secondary-Purple;
+                border-width: var(--border-hover-width);
+                border-color: $secondary-Purple;
                 cursor: default;
               }
             }
@@ -152,22 +154,18 @@
         .awards {
           @include display($justify: unset, $direction: column);
           gap: 20px;
-          
+
           .techWizContainer {
             text-decoration: none;
-          
-            &:hover {
-              cursor: pointer !important;
-            }
           }
 
           .inner-Awards {
-            border: 1px solid $link-Hover;
+            border: var(--border-width) solid $link-Hover;
             border-radius: 5px;
             width: 100%;
             height: 140px;
             @include display();
-            
+
             .award-Item {
               width: 93%;
               .competition {
@@ -185,7 +183,7 @@
                   font-family: "IBM Plex Mono", -apple-system,
                     BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
                     Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-                  color: $text-White;
+                  color: var(--description-color);
                   font-size: 12px;
                 }
               }
@@ -202,7 +200,8 @@
               }
             }
             &:hover {
-              border: 1.3px solid $secondary-Purple;
+              border-width: var(--border-hover-width);
+              border-color: $secondary-Purple;
               cursor: pointer;
             }
           }
@@ -228,11 +227,12 @@
           display: grid;
           grid-template-columns: repeat(3, 1fr);
           gap: 10px;
+
           .skill {
             width: inherit;
             height: 210px;
             border-radius: 5px;
-            border: 1px solid $link-Hover;
+            border: var(--border-width) solid $link-Hover;
             @include display($direction: column);
             .skills {
               width: 80%;
@@ -257,8 +257,8 @@
             }
 
             &:hover {
-              border: 1.3px solid $secondary-Purple;
-              @extend %transition;
+              border-width: var(--border-hover-width);
+              border-color: $secondary-Purple;
             }
           }
         }
@@ -287,7 +287,7 @@
             height: 80px;
             @include display();
             border-radius: 5px;
-            border: 1px solid $link-Hover;
+            border: var(--border-width) solid $link-Hover;
             p {
               @include display();
               @extend %Intro-Ptag;
@@ -295,8 +295,8 @@
               font-size: 14px;
             }
             &:hover {
-              border: 1.3px solid $secondary-Purple;
-              @extend %transition;
+              border-width: var(--border-hover-width);
+              border-color: $secondary-Purple;
             }
           }
         }
@@ -326,7 +326,7 @@
         .project {
           width: 100%;
           height: 100%;
-          border: 1px solid $link-Hover;
+          border: var(--border-width) solid $link-Hover;
           border-radius: 5px;
           @include display($align: unset);
           transition-property: all;
@@ -406,8 +406,8 @@
           }
 
           &:hover {
-            border: 1.3px solid $secondary-Purple;
-            @extend %transition;
+            border-width: var(--border-hover-width);
+            border-color: $secondary-Purple;
           }
         }
       }
@@ -418,7 +418,7 @@
 @media screen and (max-width: 1024px) {
   .inner-Landingpage-Container {
     width: 90% !important;
-    
+
     .header-Header-Container {
       height: 650px !important;
       .header-Title {

@@ -1,4 +1,29 @@
 @import "./config";
+
+:root {
+  --background-color: #{$background-Black};
+  --text-color: #{$text-White};
+  --description-color: #{$description-White};
+  --border-width: 1px;
+  --border-hover-width: 1.5px;
+}
+
+[data-theme="light"] {
+  --background-color: #{$light-background};
+  --text-color: #{$light-text};
+  --description-color: #{$description-Black};
+  --border-width: 1.3px;
+  --border-hover-width: 1.6px;
+}
+
+[data-theme="dark"] {
+  --background-color: #{$background-Black};
+  --text-color: #{$text-White};
+  --description-color: #{$description-White};
+  --border-width: 1px;
+  --border-hover-width: 1.3px;
+}
+
 * {
   width: 100%;
   box-sizing: border-box;
@@ -8,7 +33,9 @@
 }
 
 body {
-  background: #000000;
+  background: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .app-Container {
@@ -20,20 +47,22 @@ body {
     "Header"
     "Main"
     "Footer";
-  background-color: $background-Black;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
 
   Header {
     grid-area: Header;
     top: 0;
   }
   main {
-    color: white;
+    color: var(--text-color);
     grid-area: Main;
     overflow: hidden;
   }
 
   footer {
     grid-area: Footer;
-    color: white;
+    color: var(--text-color);
   }
 }
