@@ -145,7 +145,7 @@ const Header = () => {
                   <IconLinkedinLogo size={size} />
                 </a>
                 <a
-                  href="https://twitter.com/NwaoguSixtus"
+                  href="https://x.com/6two_s55"
                   target="_blank"
                   rel="noreferrer"
                 >
