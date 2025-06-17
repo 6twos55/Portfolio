@@ -68,12 +68,17 @@ const LandingPage = () => {
             <h3>
               Hello, I'm <span style={{ color: "#0000ff" }}>Sixtus Nwaogu</span>
               .<br />
-              I'm a dedicated web developer with a passion for creating
-              user-friendly software. <br /> Over time, I've honed my
-              problem-solving skills through the development of various
-              applications. <br /> I specialize in building full-stack
-              (front-end inclined) web applications, with a strong focus on
-              reusability and simplicity.
+              I'm a dedicated web developer passionate about creating
+              user-friendly and accessible software. <br />
+              Over time, I've sharpened my problem-solving skills by building a
+              variety of real-world applications. <br />
+              I specialize in full-stack (front-end focused) web development,
+              with a strong emphasis on simplicity, reusability, and
+              maintainability.
+              <br />
+              I'm also experienced with writing tests using tools like Jest and
+              React Testing Library to ensure reliability and smooth user
+              experiences.
             </h3>
             <span>{codeSnippets.pClose}</span>
           </div>
