@@ -14,7 +14,7 @@
     height: fit-content !important;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 90px;
     justify-content: center;
 
     .header-Header-Container {
@@ -210,14 +210,14 @@
     }
 
     .skill-Tech {
-      height: 1100px;
+      // height: 1100px;
       @include display($direction: column, $align: flex-start, $justify: unset);
-      gap: 190px;
+      gap: 80px;
 
       .skill-Container {
-        height: 40%;
+        // height: 40%;
         @include display($direction: column, $justify: unset);
-        gap: 40px;
+        gap: 25px;
 
         h3 {
           @extend %topic-Headers;
@@ -265,7 +265,7 @@
       }
 
       .technologies-Container {
-        height: 700px;
+        // height: 700px;
         @include display($direction: column, $justify: unset);
         gap: 20px;
         h3 {
@@ -276,7 +276,7 @@
         p {
           @extend %Intro-Ptag;
           padding-left: 0;
-          font-size: 12px;
+          font-size: 14px;
         }
         .tech-List-Container {
           display: grid;
@@ -314,7 +314,7 @@
       p {
         @extend %Intro-Ptag;
         padding-left: 0;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 20px;
       }
 
@@ -418,9 +418,9 @@
 @media screen and (max-width: 1024px) {
   .inner-Landingpage-Container {
     width: 90% !important;
+    gap: 70px !important;
 
     .header-Header-Container {
-      height: 650px !important;
       .header-Title {
         height: auto !important;
         h1 {
@@ -513,6 +513,8 @@
 }
 @media screen and (max-width: 530px) {
   .inner-Landingpage-Container {
+    gap: 50px !important;
+
     .header-Header-Container {
       height: fit-content !important;
       gap: 70px !important;
