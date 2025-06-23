@@ -63,6 +63,10 @@ footer {
             @extend %Links;
             font-size: 25px;
             color: var(--text-color);
+
+            &:hover {
+              transform: scale(1.2);
+            }
           }
         }
       }
@@ -90,12 +94,39 @@ footer {
     }
   }
 }
+
+@media screen and (max-width: 1280px) {
+  .footer-Container {
+    width: 80% !important;
+    .contact {
+      h2 {
+        font-size: 42px !important;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .footer-Container {
     width: 90% !important;
     .contact {
       h2 {
-        font-size: 41px !important;
+        font-size: 35px !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .footer {
+    height: 600px;
+
+    .footer-Container {
+      .contact {
+        h2 {
+          line-height: 60px !important;
+          font-size: 30px !important;
+        }
       }
     }
   }
@@ -103,7 +134,7 @@ footer {
 
 @media screen and (max-width: 530px) {
   footer {
-    height: 600px !important;
+    height: 550px !important;
     .footer-Container {
       .contact {
         h2 {
