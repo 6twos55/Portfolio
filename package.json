@@ -5,9 +5,6 @@
   "dependencies": {
     "@iconify/iconify": "^3.1.0",
     "@tailwindcss/postcss": "^4.3.2",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
     "@vtex/phosphor-icons": "^0.2.8",
     "aos": "^2.3.4",
     "next": "^16.2.10",

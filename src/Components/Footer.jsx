@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="w-full h-[700px] bg-[var(--background-color)] flex justify-center max-[1280px]:h-auto max-[750px]:h-[600px] max-[530px]:h-[550px]">
+    <footer className="w-full h-175 bg-[var(--background-color)] flex justify-center max-[1280px]:h-auto max-[750px]:h-[600px] max-[530px]:h-[550px]">
       <div className="w-[75%] max-[1280px]:w-[80%] max-[1024px]:w-[90%] flex flex-col justify-around bg-[var(--background-color)] text-[var(--text-color)] border-t border-[var(--border-color)]" id='Contact'>
         
         <div data-aos-duration="1000" data-aos="fade-up" className="flex flex-col items-start gap-[20px] pt-10">
