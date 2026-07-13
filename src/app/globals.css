@@ -30,7 +30,7 @@
   }
 
   [data-theme="dark"] {
-    --background-color: #000;
+    --background-color: #060613;
     --text-color: rgb(214, 215, 216);
     --description-color: rgb(151, 157, 169);
     --border-color: rgba(154, 154, 154, 0.28);

@@ -1,37 +1,35 @@
 "use client";
 
-import React, { createContext, useContext } from 'react'
+import { createContext, useContext } from 'react'
 import { IconGlobe, IconFolder, IconDatabase, IconCloud } from '@vtex/phosphor-icons';
 
-// Import images from public/ directory since we are using Next.js App Router
-// In Next.js, public assets are accessed from the root "/"
 const ProjectsData = [
   {
-    prImg: "/bambi-art.png",
-    prName: "Bambi's Designs",
-    prSiteLink: "https://bambi-design.vercel.app/",
-    prDes: "A cloth and resin web application, bringing people from diverse forms of art to a single house!",
-    gitLink: "https://github.com/6twos55/Bambi-Design"
+    prImg: "/aara-banner.png",
+    prName: "Aara Fitness",
+    prSiteLink: "https://aara.space/",
+    prDes: "Showcase and onboarding website for a Fitness company. Built with Next.js and TailwindCSS.",
+    gitLink: "https://github.com/6twos55/aara"
   },
   {
     prImg: "/blog-base.png",
     prName: "BlogBase",
     prSiteLink: "https://blogbase-app.vercel.app/",
-    prDes: "BlogBase is a CRUD blog posting application created using MERN. Home to all your casual day-to-day posts.",
+    prDes: "Blog posting application created with MERN stack. Add, delete and update ANY post.",
     gitLink: "https://github.com/6twos55/BlogBase"
   },
   {
-    prImg: "/thrift-fashion.png",
-    prName: "Thrift Fashion Store",
-    prSiteLink: "https://thrift-fashion-secondhand.netlify.app/",
-    prDes: "Thrift Fashion is an online shopping platform developed using JavaScript. It was created by Team Achievers during the Techwiz Competition 2022, where I was the team leader.",
-    gitLink: "https://github.com/6twos55/Thrift-fashion"
+    prImg: "/oguguo-banner.png",
+    prName: "OGUGUO",
+    prSiteLink: "https://oguguo.vercel.app/",
+    prDes: "Portfolio website for a Brand designer & Artist. Built with Next.js and TailwindCSS.",
+    gitLink: "https://github.com/6twos55/oguguo_portfolio"
   },
   {
     prImg: "/space-shooter.png",
     prName: "Space Shooter",
     prSiteLink: "https://spacerocks-shooter.netlify.app/",
-    prDes: "Space Shooter is a JavaScript-based shooting game where players shoot falling rocks and earn points. This game is optimized for desktop views only.",
+    prDes: "Space shooter game. Shoot falling rocks and earn points. Desktop views only.",
     gitLink: "https://github.com/6twos55/Space-shooter"
   }
 ];

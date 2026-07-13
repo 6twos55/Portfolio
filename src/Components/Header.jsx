@@ -75,7 +75,7 @@ const Header = () => {
 
       {/* Mobile Menu Overlay */}
       {open && (
-        <span className="fixed inset-0 w-screen h-screen flex flex-col bg-[var(--background-color)] z-[100]">
+        <span className="fixed inset-0 h-screen flex flex-col bg-[var(--background-color)] z-[100]">
           <span className="flex justify-between items-center w-[90%] h-[10%] mx-auto">
             <Link href="#Home" className="text-[21px] leading-[28px] text-[var(--color-secondary-purple)] font-normal font-['Gochi_Hand','Courier_New',Courier,monospace] no-underline w-auto">
               {sixtus}
@@ -83,7 +83,7 @@ const Header = () => {
             <IconX className="cursor-pointer text-[var(--text-color)] w-auto" onClick={handleClose} size={30} />
           </span>
 
-          <span className="flex h-[90%] w-[90%] mx-auto flex-col pt-[5%] gap-[30px]">
+          <span className="flex h-[90%] w-[90%] mx-auto flex-col pt-[5%] items-center gap-[30px]">
             <Link
               href="/Sixtus_Nwaogu.pdf"
               target="_blank"
