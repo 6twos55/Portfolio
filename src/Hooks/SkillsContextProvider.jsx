@@ -15,7 +15,7 @@ const ProjectsData = [
     prImg: "/blog-base.png",
     prName: "BlogBase",
     prSiteLink: "https://blogbase-app.vercel.app/",
-    prDes: "Blog posting application created with MERN stack. Add, delete and update ANY post.",
+    prDes: "Blog posting application created with MERN stack. Add, delete and update your posts.",
     gitLink: "https://github.com/6twos55/BlogBase"
   },
   {
