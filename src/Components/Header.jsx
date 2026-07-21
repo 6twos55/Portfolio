@@ -6,7 +6,7 @@ import {
   IconListDashes,
   IconX,
   IconGithubLogo,
-  IconTwitterLogo,
+  IconWhatsappLogo,
   IconLinkedinLogo,
   IconInstagramLogo,
   IconMoonStars,
@@ -104,8 +104,8 @@ const Header = () => {
               <Link href="https://linkedin.com/in/sixtus-nwaogu/" target="_blank" rel="noreferrer" className="text-[var(--text-color)]">
                 <IconLinkedinLogo size={25} />
               </Link>
-              <Link href="https://x.com/6two_s55" target="_blank" rel="noreferrer" className="text-[var(--text-color)]">
-                <IconTwitterLogo size={25} />
+              <Link href="https://wa.me/2347031520147" target="_blank" rel="noreferrer" className="text-[var(--text-color)]">
+                <IconWhatsappLogo size={25} />
               </Link>
               <Link href="https://www.instagram.com/6two_s55/" target="_blank" rel="noreferrer" className="text-[var(--text-color)]">
                 <IconInstagramLogo size={25} />

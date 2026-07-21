@@ -1,6 +1,6 @@
 "use client";
 
-import { IconEnvelope, IconGithubLogo, IconLinkedinLogo, IconTwitterLogo, IconInstagramLogo } from '@vtex/phosphor-icons';
+import { IconEnvelope, IconGithubLogo, IconLinkedinLogo, IconWhatsappLogo, IconInstagramLogo } from '@vtex/phosphor-icons';
 import Link from 'next/link';
 
 const Footer = () => {
@@ -23,16 +23,16 @@ const Footer = () => {
           </Link>
           
           <span className="w-auto flex flex-col items-start gap-[15px] h-[80px] mt-8">
-            <small className="text-[var(--description-color)] font-['IBM_Plex_Mono',system-ui,sans-serif]">My handles</small>
-            <span className="w-auto flex items-end gap-[10px]">
+            <small className="text-(--description-color) font-['IBM_Plex_Mono',system-ui,sans-serif]">My handles</small>
+            <span className="w-auto flex items-end gap-2.5">
               <Link href='https://github.com/6twos55' target="_blank" rel='noreferrer' title='Github' className="w-[30px] text-[25px] text-[var(--text-color)] transition-all duration-300 hover:scale-120">
                 <IconGithubLogo/>
               </Link>
               <Link target="_blank" href='https://linkedin.com/in/sixtus-nwaogu/' rel='noreferrer' title='LinkedIn' className="w-[30px] text-[25px] text-[var(--text-color)] transition-all duration-300 hover:scale-120">
                 <IconLinkedinLogo/>
               </Link>
-              <Link target="_blank" href='https://x.com/6two_s55' rel='noreferrer' title='Twitter' className="w-[30px] text-[25px] text-[var(--text-color)] transition-all duration-300 hover:scale-120">
-                <IconTwitterLogo />
+              <Link target="_blank" href='https://wa.me/2347031520147' rel='noreferrer' title='WhatsApp' className="w-[30px] text-[25px] text-[var(--text-color)] transition-all duration-300 hover:scale-120">
+                <IconWhatsappLogo />
               </Link>
               <Link href='https://www.instagram.com/6two_s55/' rel='noreferrer' target="_blank" title='Instagram' className="w-[30px] text-[25px] text-[var(--text-color)] transition-all duration-300 hover:scale-120">
                 <IconInstagramLogo/>
@@ -42,11 +42,11 @@ const Footer = () => {
         </div>
 
         <div className="flex justify-between max-[530px]:flex-col max-[530px]:text-center pb-8 mt-10">
-          <span className="w-auto flex gap-[7px] max-[530px]:justify-center">
-            <small className="text-[11px] text-[var(--description-color)] font-['IBM_Plex_Mono',system-ui,sans-serif] cursor-default">&copy; {new Date().getFullYear()} Sixtus Nwaogu. All Rights Reserved.</small>
+          <span className="w-auto flex gap-1.75 max-[530px]:justify-center">
+            <small className="text-[11px] text-(--description-color) font-['IBM_Plex_Mono',system-ui,sans-serif] cursor-default">&copy; {new Date().getFullYear()} Sixtus Nwaogu. All Rights Reserved.</small>
           </span>
           <span className="w-auto">
-            <small className="text-[11px] text-[var(--description-color)] font-['IBM_Plex_Mono',system-ui,sans-serif] cursor-default">Built with Next.js and Tailwind CSS.</small>
+            <small className="text-[11px] text-(--description-color) font-['IBM_Plex_Mono',system-ui,sans-serif] cursor-default">Built with Next.js and Tailwind CSS.</small>
           </span>
         </div>
       </div>
