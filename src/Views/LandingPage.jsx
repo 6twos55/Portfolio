@@ -130,10 +130,10 @@ const LandingPage = () => {
                         </span>
                       </span>
                       <span className="pb-[10px]">
-                        <h5 className="font-['IBM_Plex_Mono',system-ui,sans-serif] font-extrabold text-[16px] max-[530px]:text-[14px] leading-[30px] text-[var(--color-secondary-purple)] mb-[3px]">
+                        <h5 className="font-['IBM_Plex_Mono',system-ui,sans-serif] font-medium text-[16px] max-[530px]:text-[14px] leading-[30px] text-[var(--color-secondary-purple)] mb-[3px]">
                           {education.institute}
                         </h5>
-                        <p className="font-['IBM_Plex_Mono',system-ui,sans-serif] font-medium text-[15px] max-[530px]:text-[13px] leading-[20px] text-[var(--color-secondary-purple)]">
+                        <p className="font-['IBM_Plex_Mono',system-ui,sans-serif] font-normal text-[14px] max-[530px]:text-[12.5px] leading-[20px] text-[var(--color-secondary-purple)]">
                           {education.location}
                         </p>
                       </span>
@@ -176,7 +176,7 @@ const LandingPage = () => {
                       </span>
                     </span>
                     <span className="block mt-2">
-                      <p className="font-['IBM_Plex_Mono',system-ui,sans-serif] font-extrabold text-[15px] max-[530px]:text-[13px] leading-[30px] text-[var(--color-secondary-purple)]">
+                      <p className="font-['IBM_Plex_Mono',system-ui,sans-serif] font-medium text-[15px] max-[530px]:text-[13px] leading-[30px] text-[var(--color-secondary-purple)]">
                         {award.team}
                       </p>
                     </span>
@@ -209,9 +209,7 @@ const LandingPage = () => {
             </p>
           </div>
 
-          <div
-            className="grid grid-cols-2 max-md:grid-cols-1 gap-[22px] md:gap-[26px] lg:gap-[30px] w-full max-[1024px]:mx-0 max-[1024px]:px-0"
-          >
+          <div className="grid grid-cols-2 max-md:grid-cols-1 gap-[22px] md:gap-[26px] lg:gap-[30px] w-full max-[1024px]:mx-0 max-[1024px]:px-0">
             {Projects.map((project, index) => (
               <div
                 data-aos-duration="800"
